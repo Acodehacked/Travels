@@ -202,7 +202,7 @@ nav .navbar .NavHome {
   position: relative;
   background: var(--tertiary-color);
   color: var(--primary-color);
-  padding: 40px;
+  padding: 20px;
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
@@ -315,11 +315,12 @@ nav .navbar .NavHome {
   border: 2px solid #454545;
   border-radius: 20px;
   padding: 30px;
+  width: 100%;
   transition: all 0.7s ease-in-out;
 }
 
 .service .service_box #gif {
-  width: 15%;
+  width: 35%;
 }
 
 .service_box:hover {
@@ -406,7 +407,9 @@ nav .navbar .NavHome {
   .section .section_heading span {
     font-size: 40px;
   }
-  
+  .review_of_a_person .profile{
+    display: none;
+  }
 
 
 
@@ -429,45 +432,30 @@ nav .navbar .NavHome {
 
   /* popular destination */
 
-  .section .destination img {
-    width: 120%;
-  }
-
 
   .section .destination {
     display: grid;
-    gap: 1%;
     grid-template-columns: repeat(1, 1fr);
-    margin-bottom: 80px;
+    margin-bottom: 20px;
   }
 
 
 
 
   .img_des {
-    width: 120%;
-    padding: 10px;
+    padding: 7px;
     opacity: 0;
-    transform: translateY(5%);
-    transition: opacity 0.5s ease-in-out, transform 0.7s ease-in-out;
+    transition: opacity 0.2s ease-in-out, transform 0.7s ease-in-out;
     pointer-events: none;
+    padding: 30px;
   }
 
   .destination_img:hover .img_des {
     opacity: 1;
-    transform: translateY(0);
     backdrop-filter: blur(3px);
     pointer-events: auto;
   }
 
-  .section .destination .destination_img .img_des h1 {
-    margin-left: 12%;
-    margin-top: 30%;
-  }
-
-  .section .destination .destination_img .img_des p {
-    margin-left: 12%;
-  }
 
 
   /* services */
@@ -479,15 +467,6 @@ nav .navbar .NavHome {
     margin-bottom: 80px;
   }
 
-  .service .service_box {
-    width: 120%;
-    border-radius: 20px;
-    padding: 20px;
-  }
-
-  .service .service_box #gif {
-    width: 18%;
-  }
 
 
 
@@ -499,14 +478,9 @@ nav .navbar .NavHome {
     gap: 5%;
     row-gap: 2%;
     margin-bottom: 80px;
-    width: 120%;
   }
 
 
-
-  .review_text:hover {
-    scale: 1.1;
-  }
 
 
   /* gallery section */
